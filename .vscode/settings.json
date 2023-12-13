@@ -1,0 +1,108 @@
+{
+  "editor.fontFamily": "Operator Mono",
+  "editor.lineHeight": 24,
+  "editor.fontLigatures": true,
+  "explorer.decorations.badges": false,
+  "dart.flutterSdkPath": "c:/Flutter/flutter_windows_3.13.8-stable/flutter",
+  "editor.mouseWheelZoom": true,
+"workbench.list.mouseWheelScrollSensitivity": 0.2,
+  "explorer.confirmDelete": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.indentSize": "tabSize",
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "dart.lineLength": 150,
+  "[dart]": {
+    "editor.tabSize": 2,
+    "editor.rulers": [
+        200
+    ],
+  },
+  "[dockercompose]": {
+    "editor.tabSize": 4
+  },
+  "[yaml]": {
+    "editor.tabSize": 4
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorCustomizations": {
+    "[Material Theme Darker High Contrast]": {
+      "activityBarBadge.background": "#388E3C",
+      "activityBar.activeBorder": "#388E3C",
+      "list.activeSelectionForeground": "#388E3C",
+      "list.inactiveSelectionForeground": "#388E3C",
+      "list.highlightForeground": "#388E3C",
+      "scrollbarSlider.activeBackground": "#388E3C50",
+      "editorSuggestWidget.highlightForeground": "#388E3C",
+      "textLink.foreground": "#388E3C",
+      "progressBar.background": "#388E3C",
+      "pickerGroup.foreground": "#388E3C",
+      "tab.activeBorder": "#388E3C",
+      "notificationLink.foreground": "#388E3C",
+      "editorWidget.resizeBorder": "#388E3C",
+      "editorWidget.border": "#388E3C",
+      "settings.modifiedItemIndicator": "#388E3C",
+      "settings.headerForeground": "#388E3C",
+      "panelTitle.activeBorder": "#388E3C",
+      "breadcrumb.activeSelectionForeground": "#388E3C",
+      "menu.selectionForeground": "#388E3C",
+      "menubar.selectionForeground": "#388E3C",
+      "editor.findMatchBorder": "#388E3C",
+      "selection.background": "#388E3C40",
+      "statusBarItem.remoteBackground": "#388E3C"
+    }
+  },
+  "materialTheme.accent": "Breaking Bad",
+  "editor.renderWhitespace": "all",
+  "aws.telemetry": false,
+  "editor.minimap.enabled": false,
+  "pymakr.devices.configs": {
+    "Py9739b0": {
+      "autoConnect": "onLostConnection",
+      "name": "",
+      "username": "micro",
+      "password": "python",
+      "hidden": false,
+      "rootPath": "/flash",
+      "adapterOptions": {}
+    },
+    "serial:///dev/tty.Bluetooth-Incoming-Port": {
+      "autoConnect": "onLostConnection",
+      "name": "",
+      "username": "micro",
+      "password": "python",
+      "hidden": false,
+      "rootPath": null,
+      "adapterOptions": {}
+    },
+    "serial://COM1": {
+      "autoConnect": "onLostConnection",
+      "name": "",
+      "username": "micro",
+      "password": "python",
+      "hidden": false,
+      "rootPath": null,
+      "adapterOptions": {}
+    }
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "terminal.integrated.localEchoLatencyThreshold": 50,
+  "dart.flutterCustomEmulators": [],
+  "python.interpreter.infoVisibility": "always",
+"terminal.integrated.defaultProfile.windows": "Command Prompt",
+"redhat.telemetry.enabled": true,
+"cmake.configureOnOpen": true,
+"Python_Config.aggressiveSettings": true,
+"autopep8.args": [
+    "--line-length",
+    "119"
+],
+"editor.defaultFormatter": "ms-python.autopep8",
+"editor.defaultFoldingRangeProvider": "ms-python.autopep8",
+"git.confirmSync": false,
+"git.enableSmartCommit": true
+}

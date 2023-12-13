@@ -1,5 +1,8 @@
 {
-  "projects": {},
+  "projects": {
+    "MyMSG": "mymsg-5cc5d",
+    "dev": "mymsg-5cc5d"
+  },
   "targets": {},
   "etags": {}
 }

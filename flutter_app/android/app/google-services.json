@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "775225520018",
+    "project_id": "mymsg-5cc5d",
+    "storage_bucket": "mymsg-5cc5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775225520018:android:870d5871ae0791c0c41b4b",
+        "android_client_info": {
+          "package_name": "com.example.fluttergroupchatappwithfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775225520018-t25jt328c92j002jo6n9ipiurr215hsp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP5XhAKa8LMuYPCt0wc7rvGjVDc3R2flI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775225520018-t25jt328c92j002jo6n9ipiurr215hsp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,9 +1,8 @@
 import 'package:dartz/dartz.dart';
+import 'package:flutter_group_chat_app_with_firebase/core/data/data_sources/auth_ds.dart';
+import 'package:flutter_group_chat_app_with_firebase/core/data/data_sources/users_ds.dart';
+import 'package:flutter_group_chat_app_with_firebase/core/domain/entities/failures/failure.dart';
 import 'package:flutter_group_chat_app_with_firebase/core/domain/services/notifications_service.dart';
-import '../../data/data_sources/auth_ds.dart';
-import '../entities/failures/failure.dart';
-import '../../data/data_sources/users_ds.dart';
-
 
 class AuthService {
   final AuthDS authDS;
@@ -18,7 +17,7 @@ class AuthService {
 
   void addOnSignInListener(void Function() listener) => authDS.addOnSignInListener(listener);
 
-  void addOnSignOutListener(void Function() listener)  => authDS.addOnSignOutListener(listener);
+  void addOnSignOutListener(void Function() listener) => authDS.addOnSignOutListener(listener);
 
   Future<void> signOut() async {
     await notificationsController.removeTokenFromLoggedUser();
@@ -43,5 +42,4 @@ class AuthService {
   void removeOnSignOutListener(void Function() listener) {
     authDS.removeOnSignOutListener(listener);
   }
-
 }

@@ -1,6 +1,6 @@
 import 'package:flutter_group_chat_app_with_firebase/core/domain/services/auth_service.dart';
+import 'package:flutter_group_chat_app_with_firebase/features/chat/domain/chat_utils.dart' as chat_utils;
 import 'package:flutter_group_chat_app_with_firebase/injection_container.dart';
-import '../../../features/chat/domain/chat_utils.dart' as chatUtils;
 
 class UserPublic {
   final String uid;
@@ -12,7 +12,7 @@ class UserPublic {
   String get fullName => "$firstName $lastName";
 
   String get conversationId {
-    return chatUtils.getDirectConversationId([uid, getIt.get<AuthService>().loggedUid!]);
+    return chat_utils.getDirectConversationId([uid, getIt.get<AuthService>().loggedUid!]);
   }
 
   static UserPublic empty() => UserPublic(uid: '', firstName: '', lastName: '');
