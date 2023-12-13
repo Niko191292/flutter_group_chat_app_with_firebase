@@ -80,7 +80,7 @@ class _RealtimeConversationsScreenState extends State<RealtimeConversationsScree
   @override
   Widget build(BuildContext context) {
     // final double contentHeight = MediaQuery.of(context).size.height - 82;
-    final double contentHeight = MediaQuery.of(context).size.height - 105;
+    final double contentHeight = MediaQuery.of(context).size.height;
 
     return MyScaffold(
       background: background2Colors,
@@ -202,8 +202,7 @@ class _RealtimeConversationsScreenState extends State<RealtimeConversationsScree
                       return SizedBox(
                         height: contentHeight,
                         child: const Center(
-                          child: Text("An error occurred. Please try again later",
-                              style: TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600)),
+                          child: Text("An error occurred. Please try again later", style: TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600)),
                         ),
                       );
                     }
@@ -217,8 +216,7 @@ class _RealtimeConversationsScreenState extends State<RealtimeConversationsScree
                         ),
                       );
                     }
-                    final contacts = snapshotContacts.data!
-                        .where((element) => ("${element.firstName} ${element.lastName}").toLowerCase().contains(searchController.text.toLowerCase()));
+                    final contacts = snapshotContacts.data!.where((element) => ("${element.firstName} ${element.lastName}").toLowerCase().contains(searchController.text.toLowerCase()));
 
                     if (contacts.isEmpty && !detailedConversationsController.hasData) {
                       return SizedBox(
@@ -227,25 +225,15 @@ class _RealtimeConversationsScreenState extends State<RealtimeConversationsScree
                             mainAxisAlignment: searchController.text.isEmpty ? MainAxisAlignment.center : MainAxisAlignment.start,
                             children: [
                               Icon(Icons.supervised_user_circle, color: Colors.white.withOpacity(.5), size: 80),
-                              const SizedBox(
-                                height: 10,
-                              ),
-                              const Text(
-                                "No conversation",
-                                style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 18),
-                                textAlign: TextAlign.center,
-                              ),
-                              const SizedBox(
-                                height: 10,
-                              ),
+                              const SizedBox(height: 10),
+                              const Text("No conversation", style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 18), textAlign: TextAlign.center),
+                              const SizedBox(height: 10),
                               Text(
                                 searchController.text.isEmpty ? "Create another account and start playing :)" : "No conversation matches the filter",
                                 style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 15),
                                 textAlign: TextAlign.center,
                               ),
-                              const SizedBox(
-                                height: 22,
-                              ),
+                              const SizedBox(height: 22),
                               ButtonWidget(
                                 text: 'LOGOUT',
                                 isSmall: true,
